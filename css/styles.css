@@ -1,0 +1,15 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex; /* makes it so the elements recognize each other and give them space*/
+    flex-direction: column; /*makes it from top to bottom instead of left and right (like with row)*/
+    justify-content: center; /*makes it in the middel*/
+}
+
+#leaf{
+    background-image:url(/img/aaaaaaa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    aspect-ratio: 1;
+} 
