@@ -13,3 +13,23 @@ body{
     width: 200px;
     aspect-ratio: 1;
 } 
+
+.small-leaf{
+    position: absolute;
+    top: 0vw;
+    background-image:url(/img/aaaaaaa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    aspect-ratio: 1;
+    animation: anim1 2s linear;
+} 
+
+@keyframes anim1{
+    /*0%{
+        
+    }*/
+    100%{
+        top: 150vh;
+    }
+}
