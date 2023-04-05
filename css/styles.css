@@ -4,14 +4,17 @@ body{
     display: flex; /* makes it so the elements recognize each other and give them space*/
     flex-direction: column; /*makes it from top to bottom instead of left and right (like with row)*/
     justify-content: center; /*makes it in the middel*/
+    align-items: center;
+    background-color: rgb(122, 155, 147);
 }
 
 #leaf{
     background-image:url(/img/aaaaaaa.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
+    width: 350px;
     aspect-ratio: 1;
+    z-index: 2;
 } 
 
 .small-leaf{
@@ -20,10 +23,15 @@ body{
     background-image:url(/img/aaaaaaa.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30px;
+    width: 50px;
     aspect-ratio: 1;
     animation: anim1 2s linear;
+    z-index: 1;
 } 
+
+.bigleaf-animation{
+    animation: anim2 0.35s linear;
+}
 
 @keyframes anim1{
     /*0%{
@@ -31,5 +39,17 @@ body{
     }*/
     100%{
         top: 150vh;
+    }
+}
+
+@keyframes anim2{
+    0%{
+        width: 350px;
+    }
+    50%{
+        width: 380px;
+    }
+    100%{
+        width: 350px;
     }
 }
