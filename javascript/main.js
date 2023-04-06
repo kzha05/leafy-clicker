@@ -1,5 +1,7 @@
 window.onload = function(){
     var click = 0;
+    var leaf_boost = false;
+    var leaf_boost_countdown = 0;
 
     function small_leaf_animation(){
         var small_leaf = document.createElement("div");
@@ -16,7 +18,7 @@ window.onload = function(){
 
     function add_leaf(){
         click = click + 1;
-        document.getElementById("amount-of-leafs").innerHTML = click;
+        document.getElementById("amount-of-leaves").innerHTML = click + " leaves";
     }
 
     function big_leaf_animation(){
@@ -31,4 +33,8 @@ window.onload = function(){
        small_leaf_animation();
        big_leaf_animation();
     }
+
+    setInterval(() => {
+        leaf_boost_countdown += 1; 
+    }, 1000);
 }
